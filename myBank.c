@@ -65,7 +65,7 @@ int withdrawal (double bankAccounts [][USE] , int account_number ){
     	printf("Cannot withdraw a negative amount\n\n");
     	return 0 ;
     }
-    if(amount_withdrawal > bankAccounts[account_number-901][1]){
+    else if(amount_withdrawal > bankAccounts[account_number-901][1]){
         printf("Cannot withdraw more than the balance\n");
     }else {
         bankAccounts[account_number-901][1] -= amount_withdrawal ;
@@ -78,9 +78,9 @@ int closeAccount (double bankAccounts [][USE] , int account_number ){
     printf("Closed account number %d\n" , account_number) ;
     return 0 ;
 }
-int interest (double bankAccounts [][USE] , double interestRate ) {
+int interest (double bankAccounts [][USE] , int interestRate ) {
 	double add = 0.0 ;
-	if(interestRate <= 0.0 || interestRate > 100.0 ) { 
+	if(interestRate <= 0 || interestRate > 100 ) { 
     		printf("Invalid interest rate\n");
     		return 0 ; 
 	}
