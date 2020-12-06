@@ -2,7 +2,7 @@ CC = gcc
 AR = ar
 FLAGS = -Wall -g 
 
-all: bank
+all: main
 
 main.o: main.c
 	$(CC) $(FLAGS) -c main.c 
