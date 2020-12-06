@@ -62,7 +62,7 @@ int withdrawal (double bankAccounts [][USE] , int account_number ){
     	return 0 ; 
     }
     if(amount_withdrawal <= 0.0 ) { 
-    	printf("Cannot withdraw a negative amount\n\n");
+    	printf("Cannot withdraw a negative amount\n");
     	return 0 ;
     }
     else if(amount_withdrawal > bankAccounts[account_number-901][1]){
