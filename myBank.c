@@ -114,7 +114,7 @@ int checkIfOpen(double bankAccounts [][USE] , int account_number){
     	return 0 ;
     }
     if(account_number - 901 < 0 || account_number - 901 > 49){ 
-    	printf("++Failed to read the account number\n");
+    	printf("Failed to read the account number\n");
     	return 0 ; 
     }
     if(bankAccounts[account_number-901][0] == 1){
