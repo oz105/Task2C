@@ -15,4 +15,4 @@ main: main.o myBank.o
 .PHONY: clean all
 
 clean:
-	rm -f *.o mains	
+	rm -f *.o main
